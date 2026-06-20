@@ -141,18 +141,19 @@
 
   /* ---------- MÓDULOS ---------- */
   .mod{max-width:780px;margin:0 auto;display:grid;gap:20px}
-  .mod-card{background:var(--cream-card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-  .mod-head{background:var(--wine);color:#fff;padding:18px 24px}
-  .mod-head .tag{font-size:.76rem;letter-spacing:1.5px;text-transform:uppercase;opacity:.8}
-  .mod-head h3{font-size:1.55rem;color:#fff;margin-top:2px}
-  .mod-head .who{font-size:.9rem;opacity:.85;margin-top:4px}
-  .mod-body{padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:8px 22px}
-  .mod-body span{font-size:.98rem;padding-left:18px;position:relative;color:var(--ink)}
-  .mod-body span::before{content:"•";color:var(--gold);position:absolute;left:2px;font-weight:700}
-  .bonus-card{border:2px dashed var(--gold);background:#fdf8ef}
-  .bonus-card .mod-head{background:transparent;color:var(--ink);padding-bottom:6px}
-  .bonus-card .mod-head h3{color:var(--wine)}
-  .bonus-card .mod-head .tag{color:var(--gold)}
+  .mod-card{background:#ffffff;border:1px solid #ece2da;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+  .mod-head{background:#7c2d3a;color:#fff;padding:18px 24px}
+  .mod-head .tag{font-size:.76rem;letter-spacing:1.5px;text-transform:uppercase;opacity:.8;display:block;margin-bottom:4px}
+  .mod-head h3{font-size:1.55rem;color:#fff !important;margin-top:2px}
+  .mod-head .who{font-size:.9rem;opacity:.85;margin-top:4px;display:block}
+  .mod-body{padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
+  .mod-body span{font-size:.95rem;color:#2b2326;display:flex;align-items:flex-start;gap:8px;line-height:1.45}
+  .mod-body span::before{content:"•";color:#c9a24b;font-weight:700;flex-shrink:0;margin-top:1px}
+  .bonus-card{border:2px dashed #c9a24b;background:#fdf8ef;box-shadow:none}
+  .bonus-card .mod-head{background:transparent;padding-bottom:6px}
+  .bonus-card .mod-head h3{color:#7c2d3a !important}
+  .bonus-card .mod-head .tag{color:#c9a24b;opacity:1}
+  .bonus-card .mod-head .who{color:#544a4f}
 
   /* ---------- AUTORIDADE ---------- */
   .authority-duo{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:880px;margin:0 auto 36px}
