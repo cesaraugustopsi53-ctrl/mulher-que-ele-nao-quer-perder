@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light">
 <title>A Mulher Que Ele Não Quer Perder — César e Thais Ayumi</title>
 <meta name="description" content="O caminho para parar de correr atrás, recuperar sua segurança e voltar a ser a mulher que ele admira, deseja e tem medo de perder. Com César e Thais Ayumi.">
 <meta property="og:title" content="A Mulher Que Ele Não Quer Perder">
@@ -18,6 +20,7 @@
 <link rel="apple-touch-icon" href="img/favicon.png">
 <style>
   :root{
+    color-scheme:light only;
     --wine:#7c2d3a;
     --wine-dark:#5e1f2a;
     --wine-soft:#9d4452;
@@ -136,22 +139,20 @@
   .learn-card .num{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--gold);font-weight:700;line-height:1;flex-shrink:0}
   .learn-card .txt{font-size:1rem;font-weight:500}
 
-  /* ---------- CURRÍCULO ---------- */
-  .curriculum{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
-  .cmod{background:#fff !important;border-radius:12px;overflow:hidden;border:1px solid #e8ddd8;box-shadow:0 2px 10px rgba(0,0,0,.06)}
-  .cmod-top{background:#7c2d3a !important;padding:16px 20px}
-  .cmod-top .cnum{font-size:.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.6);display:block;margin-bottom:4px}
-  .cmod-top h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;color:#fff;font-weight:600;margin:0 0 3px}
-  .cmod-top .cprof{font-size:.83rem;color:rgba(255,255,255,.7)}
-  .cmod-list{padding:14px 20px 18px}
-  .cmod-list p{font-size:.95rem;color:#2b2326;line-height:1.55;padding:7px 0;border-bottom:1px solid #f0e8e4}
-  .cmod-list p:last-child{border-bottom:none;padding-bottom:0}
-  .cmod-list p::before{content:"▸  ";color:#c9a24b;font-weight:700}
-  .cbonus{border:2px dashed #c9a24b;background:#fdf8ef;box-shadow:none}
-  .cbonus .cmod-top{background:transparent}
-  .cbonus .cmod-top .cnum{color:#c9a24b}
-  .cbonus .cmod-top h3{color:#7c2d3a}
-  .cbonus .cmod-top .cprof{color:#544a4f}
+  /* ---------- MÓDULOS ---------- */
+  .mod{max-width:780px;margin:0 auto;display:grid;gap:20px}
+  .mod-card{background:var(--cream-card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .mod-head{background:var(--wine);color:#fff;padding:18px 24px}
+  .mod-head .tag{font-size:.76rem;letter-spacing:1.5px;text-transform:uppercase;opacity:.8}
+  .mod-head h3{font-size:1.55rem;color:#fff;margin-top:2px}
+  .mod-head .who{font-size:.9rem;opacity:.85;margin-top:4px}
+  .mod-body{padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:8px 22px}
+  .mod-body span{font-size:.98rem;padding-left:18px;position:relative;color:var(--ink)}
+  .mod-body span::before{content:"•";color:var(--gold);position:absolute;left:2px;font-weight:700}
+  .bonus-card{border:2px dashed var(--gold);background:#fdf8ef}
+  .bonus-card .mod-head{background:transparent;color:var(--ink);padding-bottom:6px}
+  .bonus-card .mod-head h3{color:var(--wine)}
+  .bonus-card .mod-head .tag{color:var(--gold)}
 
   /* ---------- AUTORIDADE ---------- */
   .authority-duo{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:880px;margin:0 auto 36px}
@@ -230,6 +231,7 @@
     .transform{grid-template-columns:1fr;gap:14px}
     .t-arrow{transform:rotate(90deg)}
     .learn-grid{grid-template-columns:1fr}
+    .mod-body{grid-template-columns:1fr}
 .authority-duo{grid-template-columns:1fr}
     .authority-card img{height:320px}
     .authority-together{grid-template-columns:1fr}
@@ -370,77 +372,77 @@
   <div class=”wrap”>
     <h2 class=”section-title”>A estrutura do curso</h2>
     <p class=”section-intro”>Quatro módulos e bônus exclusivos, construídos a partir das dores reais de milhares de mulheres.</p>
-    <div class=”curriculum”>
+    <div class=”mod”>
 
-      <div class=”cmod”>
-        <div class=”cmod-top”>
-          <span class=”cnum”>Módulo 01</span>
+      <div class=”mod-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>Módulo 01</div>
           <h3>A mente dele</h3>
-          <span class=”cprof”>com César</span>
+          <div class=”who”>com César</div>
         </div>
-        <div class=”cmod-list”>
-          <p>Como pensa o homem que trai</p>
-          <p>Arrependimento real x encenação</p>
-          <p>O que é o vício em pornografia</p>
-          <p>Por que ele te deseja menos</p>
-          <p>Por que ele inverte a culpa</p>
-          <p>Mudança que dura x recaída</p>
+        <div class=”mod-body”>
+          <span>Como pensa o homem que trai</span>
+          <span>Arrependimento real x encenação</span>
+          <span>O que é o vício em pornografia</span>
+          <span>Por que ele te deseja menos</span>
+          <span>Por que ele inverte a culpa</span>
+          <span>Mudança que dura x recaída</span>
         </div>
       </div>
 
-      <div class=”cmod”>
-        <div class=”cmod-top”>
-          <span class=”cnum”>Módulo 02</span>
+      <div class=”mod-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>Módulo 02</div>
           <h3>O seu brilho de volta</h3>
-          <span class=”cprof”>com Thais Ayumi</span>
+          <div class=”who”>com Thais Ayumi</div>
         </div>
-        <div class=”cmod-list”>
-          <p>Por que você aceita menos do que merece</p>
-          <p>Quando você deixa de ser prioridade</p>
-          <p>Como recuperar o seu brilho</p>
+        <div class=”mod-body”>
+          <span>Por que você aceita menos do que merece</span>
+          <span>Quando você deixa de ser prioridade</span>
+          <span>Como recuperar o seu brilho</span>
         </div>
       </div>
 
-      <div class=”cmod”>
-        <div class=”cmod-top”>
-          <span class=”cnum”>Módulo 03</span>
+      <div class=”mod-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>Módulo 03</div>
           <h3>Parar de correr atrás</h3>
-          <span class=”cprof”>com César e Thais</span>
+          <div class=”who”>com César e Thais</div>
         </div>
-        <div class=”cmod-list”>
-          <p>A raiz da dependência emocional</p>
-          <p>Existir sem depender da validação dele</p>
-          <p>O que muda quando você se posiciona</p>
-          <p>Virar prioridade, não opção</p>
-          <p>Impor limite sem implorar nem ameaçar</p>
-          <p>Fazer ele correr atrás de você</p>
+        <div class=”mod-body”>
+          <span>A raiz da dependência emocional</span>
+          <span>Existir sem depender da validação dele</span>
+          <span>O que muda quando você se posiciona</span>
+          <span>Virar prioridade, não opção</span>
+          <span>Impor limite sem implorar nem ameaçar</span>
+          <span>Fazer ele correr atrás de você</span>
         </div>
       </div>
 
-      <div class=”cmod”>
-        <div class=”cmod-top”>
-          <span class=”cnum”>Módulo 04</span>
+      <div class=”mod-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>Módulo 04</div>
           <h3>Ficar ou ir, com clareza</h3>
-          <span class=”cprof”>com César</span>
+          <div class=”who”>com César</div>
         </div>
-        <div class=”cmod-list”>
-          <p>Critérios reais para decidir</p>
-          <p>Voltar a confiar sem ser ingênua</p>
-          <p>Reconstruir a intimidade após o perdão</p>
-          <p>A dor que insiste em voltar</p>
-          <p>Se for para ir: sair inteira</p>
-          <p>Recomeçar sem se destruir</p>
+        <div class=”mod-body”>
+          <span>Critérios reais para decidir</span>
+          <span>Voltar a confiar sem ser ingênua</span>
+          <span>Reconstruir a intimidade após o perdão</span>
+          <span>A dor que insiste em voltar</span>
+          <span>Se for para ir: sair inteira</span>
+          <span>Recomeçar sem se destruir</span>
         </div>
       </div>
 
-      <div class=”cmod cbonus”>
-        <div class=”cmod-top”>
-          <span class=”cnum”>🎁 Bônus</span>
+      <div class=”mod-card bonus-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>🎁 Bônus</div>
           <h3>Inclusos no curso</h3>
         </div>
-        <div class=”cmod-list”>
-          <p>Sinais de traição</p>
-          <p>Sinais de um homem viciado em pornografia</p>
+        <div class=”mod-body”>
+          <span>Sinais de traição</span>
+          <span>Sinais de um homem viciado em pornografia</span>
         </div>
       </div>
 
