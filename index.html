@@ -146,9 +146,10 @@
   .mod-head .tag{font-size:.76rem;letter-spacing:1.5px;text-transform:uppercase;opacity:.8}
   .mod-head h3{font-size:1.55rem;color:#fff;margin-top:2px}
   .mod-head .who{font-size:.9rem;opacity:.85;margin-top:4px}
-  .mod-body{padding:18px 24px;display:flex;flex-direction:column;gap:10px}
-  .mod-body span{font-size:.98rem;color:var(--ink);display:block;padding-left:16px;text-indent:-16px;line-height:1.5}
-  .mod-body span::before{content:"• ";color:var(--gold);font-weight:700}
+  .mod-body{padding:12px 24px 18px}
+  .mod-body ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+  .mod-body ul li{font-size:.97rem;color:var(--ink);padding-left:18px;position:relative;line-height:1.5}
+  .mod-body ul li::before{content:"•";color:var(--gold);font-weight:900;position:absolute;left:0;top:0}
   .bonus-card{border:2px dashed var(--gold);background:#fdf8ef}
   .bonus-card .mod-head{background:transparent;color:var(--ink);padding-bottom:6px}
   .bonus-card .mod-head h3{color:var(--wine)}
@@ -231,8 +232,7 @@
     .transform{grid-template-columns:1fr;gap:14px}
     .t-arrow{transform:rotate(90deg)}
     .learn-grid{grid-template-columns:1fr}
-    .mod-body{grid-template-columns:1fr}
-    .authority-duo{grid-template-columns:1fr}
+.authority-duo{grid-template-columns:1fr}
     .authority-card img{height:320px}
     .authority-together{grid-template-columns:1fr}
     .authority-together img{min-height:220px}
@@ -380,70 +380,79 @@
           <h3>A mente dele</h3>
           <div class="who">com César</div>
         </div>
-        <div class="mod-body">
-          <span>Como pensa o homem que trai</span>
-          <span>Arrependimento real x encenação</span>
-          <span>O que é o vício em pornografia</span>
-          <span>Por que ele te deseja menos</span>
-          <span>Por que ele inverte a culpa</span>
-          <span>Mudança que dura x recaída</span>
+        <div class=”mod-body”>
+          <ul>
+            <li>Como pensa o homem que trai</li>
+            <li>Arrependimento real x encenação</li>
+            <li>O que é o vício em pornografia</li>
+            <li>Por que ele te deseja menos</li>
+            <li>Por que ele inverte a culpa</li>
+            <li>Mudança que dura x recaída</li>
+          </ul>
         </div>
       </div>
 
-      <div class="mod-card">
-        <div class="mod-head">
-          <div class="tag">Módulo 02</div>
+      <div class=”mod-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>Módulo 02</div>
           <h3>O seu brilho de volta</h3>
-          <div class="who">com Thais Ayumi</div>
+          <div class=”who”>com Thais Ayumi</div>
         </div>
         <div class=”mod-body”>
-          <span>Por que você aceita menos do que merece</span>
-          <span>Quando você deixa de ser prioridade</span>
-          <span>Como recuperar o seu brilho</span>
+          <ul>
+            <li>Por que você aceita menos do que merece</li>
+            <li>Quando você deixa de ser prioridade</li>
+            <li>Como recuperar o seu brilho</li>
+          </ul>
         </div>
       </div>
 
-      <div class="mod-card">
-        <div class="mod-head">
-          <div class="tag">Módulo 03</div>
+      <div class=”mod-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>Módulo 03</div>
           <h3>Parar de correr atrás</h3>
-          <div class="who">com César e Thais</div>
+          <div class=”who”>com César e Thais</div>
         </div>
-        <div class="mod-body">
-          <span>A raiz da dependência emocional</span>
-          <span>Existir sem depender da validação dele</span>
-          <span>O que muda quando você se posiciona</span>
-          <span>Virar prioridade, não opção</span>
-          <span>Impor limite sem implorar nem ameaçar</span>
-          <span>Fazer ele correr atrás de você</span>
+        <div class=”mod-body”>
+          <ul>
+            <li>A raiz da dependência emocional</li>
+            <li>Existir sem depender da validação dele</li>
+            <li>O que muda quando você se posiciona</li>
+            <li>Virar prioridade, não opção</li>
+            <li>Impor limite sem implorar nem ameaçar</li>
+            <li>Fazer ele correr atrás de você</li>
+          </ul>
         </div>
       </div>
 
-      <div class="mod-card">
-        <div class="mod-head">
-          <div class="tag">Módulo 04</div>
+      <div class=”mod-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>Módulo 04</div>
           <h3>Ficar ou ir, com clareza</h3>
-          <div class="who">com César</div>
+          <div class=”who”>com César</div>
         </div>
-        <div class="mod-body">
-          <span>Critérios reais para decidir</span>
-          <span>Voltar a confiar sem ser ingênua</span>
-          <span>Reconstruir a intimidade após o perdão</span>
-          <span>A dor que insiste em voltar</span>
-          <span>Se for para ir: sair inteira</span>
-          <span>Recomeçar sem se destruir</span>
+        <div class=”mod-body”>
+          <ul>
+            <li>Critérios reais para decidir</li>
+            <li>Voltar a confiar sem ser ingênua</li>
+            <li>Reconstruir a intimidade após o perdão</li>
+            <li>A dor que insiste em voltar</li>
+            <li>Se for para ir: sair inteira</li>
+            <li>Recomeçar sem se destruir</li>
+          </ul>
         </div>
       </div>
 
-      <div class="mod-card bonus-card">
-        <div class="mod-head">
-          <div class="tag">🎁 Bônus</div>
+      <div class=”mod-card bonus-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>🎁 Bônus</div>
           <h3>Inclusos no curso</h3>
         </div>
-        <div class="mod-body">
-          <span>Sinais de traição</span>
-          <span>Sinais de um homem viciado em pornografia</span>
-          <span>Autoestima</span>
+        <div class=”mod-body”>
+          <ul>
+            <li>Sinais de traição</li>
+            <li>Sinais de um homem viciado em pornografia</li>
+          </ul>
         </div>
       </div>
 
