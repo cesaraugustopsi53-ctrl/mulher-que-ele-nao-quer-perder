@@ -141,19 +141,18 @@
 
   /* ---------- MÓDULOS ---------- */
   .mod{max-width:780px;margin:0 auto;display:grid;gap:20px}
-  .mod-card{background:#ffffff;border:1px solid #ece2da;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.07)}
-  .mod-head{background:#7c2d3a;color:#fff;padding:18px 24px}
-  .mod-head .tag{font-size:.76rem;letter-spacing:1.5px;text-transform:uppercase;opacity:.8;display:block;margin-bottom:4px}
-  .mod-head h3{font-size:1.55rem;color:#fff !important;margin-top:2px}
-  .mod-head .who{font-size:.9rem;opacity:.85;margin-top:4px;display:block}
-  .mod-body{padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
-  .mod-body span{font-size:.95rem;color:#2b2326;display:flex;align-items:flex-start;gap:8px;line-height:1.45}
-  .mod-body span::before{content:"•";color:#c9a24b;font-weight:700;flex-shrink:0;margin-top:1px}
-  .bonus-card{border:2px dashed #c9a24b;background:#fdf8ef;box-shadow:none}
-  .bonus-card .mod-head{background:transparent;padding-bottom:6px}
-  .bonus-card .mod-head h3{color:#7c2d3a !important}
-  .bonus-card .mod-head .tag{color:#c9a24b;opacity:1}
-  .bonus-card .mod-head .who{color:#544a4f}
+  .mod-card{background:var(--cream-card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .mod-head{background:var(--wine);color:#fff;padding:18px 24px}
+  .mod-head .tag{font-size:.76rem;letter-spacing:1.5px;text-transform:uppercase;opacity:.8}
+  .mod-head h3{font-size:1.55rem;color:#fff;margin-top:2px}
+  .mod-head .who{font-size:.9rem;opacity:.85;margin-top:4px}
+  .mod-body{padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:8px 22px}
+  .mod-body span{font-size:.98rem;padding-left:18px;position:relative;color:var(--ink)}
+  .mod-body span::before{content:"•";color:var(--gold);position:absolute;left:2px;font-weight:700}
+  .bonus-card{border:2px dashed var(--gold);background:#fdf8ef}
+  .bonus-card .mod-head{background:transparent;color:var(--ink);padding-bottom:6px}
+  .bonus-card .mod-head h3{color:var(--wine)}
+  .bonus-card .mod-head .tag{color:var(--gold)}
 
   /* ---------- AUTORIDADE ---------- */
   .authority-duo{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:880px;margin:0 auto 36px}
@@ -373,83 +372,78 @@
   <div class=”wrap”>
     <h2 class=”section-title”>A estrutura do curso</h2>
     <p class=”section-intro”>Quatro módulos e bônus exclusivos, construídos a partir das dores reais de milhares de mulheres.</p>
-    <div style=”max-width:680px;margin:0 auto;display:grid;gap:18px”>
+    <div class=”mod”>
 
-      <!-- MOD 01 -->
-      <div style=”background:#ffffff;border:1px solid #ddd;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08)”>
-        <div style=”background:#7c2d3a;padding:18px 24px”>
-          <div style=”font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:4px”>Módulo 01</div>
-          <h3 style=”font-size:1.45rem;color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0 0 3px”>A mente dele</h3>
-          <div style=”font-size:.85rem;color:rgba(255,255,255,.75)”>com César</div>
+      <div class=”mod-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>Módulo 01</div>
+          <h3>A mente dele</h3>
+          <div class=”who”>com César</div>
         </div>
-        <ul style=”padding:16px 24px;list-style:none;display:grid;gap:9px”>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Como pensa o homem que trai</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Arrependimento real x encenação</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>O que é o vício em pornografia</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Por que ele te deseja menos</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Por que ele inverte a culpa</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Mudança que dura x recaída</li>
-        </ul>
+        <div class=”mod-body”>
+          <span>Como pensa o homem que trai</span>
+          <span>Arrependimento real x encenação</span>
+          <span>O que é o vício em pornografia</span>
+          <span>Por que ele te deseja menos</span>
+          <span>Por que ele inverte a culpa</span>
+          <span>Mudança que dura x recaída</span>
+        </div>
       </div>
 
-      <!-- MOD 02 -->
-      <div style=”background:#ffffff;border:1px solid #ddd;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08)”>
-        <div style=”background:#7c2d3a;padding:18px 24px”>
-          <div style=”font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:4px”>Módulo 02</div>
-          <h3 style=”font-size:1.45rem;color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0 0 3px”>O seu brilho de volta</h3>
-          <div style=”font-size:.85rem;color:rgba(255,255,255,.75)”>com Thais Ayumi</div>
+      <div class=”mod-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>Módulo 02</div>
+          <h3>O seu brilho de volta</h3>
+          <div class=”who”>com Thais Ayumi</div>
         </div>
-        <ul style=”padding:16px 24px;list-style:none;display:grid;gap:9px”>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Por que você aceita menos do que merece</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Quando você deixa de ser prioridade</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Como recuperar o seu brilho</li>
-        </ul>
+        <div class=”mod-body”>
+          <span>Por que você aceita menos do que merece</span>
+          <span>Quando você deixa de ser prioridade</span>
+          <span>Como recuperar o seu brilho</span>
+        </div>
       </div>
 
-      <!-- MOD 03 -->
-      <div style=”background:#ffffff;border:1px solid #ddd;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08)”>
-        <div style=”background:#7c2d3a;padding:18px 24px”>
-          <div style=”font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:4px”>Módulo 03</div>
-          <h3 style=”font-size:1.45rem;color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0 0 3px”>Parar de correr atrás</h3>
-          <div style=”font-size:.85rem;color:rgba(255,255,255,.75)”>com César e Thais</div>
+      <div class=”mod-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>Módulo 03</div>
+          <h3>Parar de correr atrás</h3>
+          <div class=”who”>com César e Thais</div>
         </div>
-        <ul style=”padding:16px 24px;list-style:none;display:grid;gap:9px”>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>A raiz da dependência emocional</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Existir sem depender da validação dele</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>O que muda quando você se posiciona</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Virar prioridade, não opção</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Impor limite sem implorar nem ameaçar</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Fazer ele correr atrás de você</li>
-        </ul>
+        <div class=”mod-body”>
+          <span>A raiz da dependência emocional</span>
+          <span>Existir sem depender da validação dele</span>
+          <span>O que muda quando você se posiciona</span>
+          <span>Virar prioridade, não opção</span>
+          <span>Impor limite sem implorar nem ameaçar</span>
+          <span>Fazer ele correr atrás de você</span>
+        </div>
       </div>
 
-      <!-- MOD 04 -->
-      <div style=”background:#ffffff;border:1px solid #ddd;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08)”>
-        <div style=”background:#7c2d3a;padding:18px 24px”>
-          <div style=”font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:4px”>Módulo 04</div>
-          <h3 style=”font-size:1.45rem;color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0 0 3px”>Ficar ou ir, com clareza</h3>
-          <div style=”font-size:.85rem;color:rgba(255,255,255,.75)”>com César</div>
+      <div class=”mod-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>Módulo 04</div>
+          <h3>Ficar ou ir, com clareza</h3>
+          <div class=”who”>com César</div>
         </div>
-        <ul style=”padding:16px 24px;list-style:none;display:grid;gap:9px”>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Critérios reais para decidir</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Voltar a confiar sem ser ingênua</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Reconstruir a intimidade após o perdão</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>A dor que insiste em voltar</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Se for para ir: sair inteira</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Recomeçar sem se destruir</li>
-        </ul>
+        <div class=”mod-body”>
+          <span>Critérios reais para decidir</span>
+          <span>Voltar a confiar sem ser ingênua</span>
+          <span>Reconstruir a intimidade após o perdão</span>
+          <span>A dor que insiste em voltar</span>
+          <span>Se for para ir: sair inteira</span>
+          <span>Recomeçar sem se destruir</span>
+        </div>
       </div>
 
-      <!-- BÔNUS -->
-      <div style=”background:#fdf8ef;border:2px dashed #c9a24b;border-radius:14px;overflow:hidden”>
-        <div style=”padding:18px 24px 10px”>
-          <div style=”font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9a24b;margin-bottom:4px”>🎁 Bônus</div>
-          <h3 style=”font-size:1.45rem;color:#7c2d3a;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0”>Inclusos no curso</h3>
+      <div class=”mod-card bonus-card”>
+        <div class=”mod-head”>
+          <div class=”tag”>🎁 Bônus exclusivos</div>
+          <h3>Inclusos no curso</h3>
         </div>
-        <ul style=”padding:10px 24px 18px;list-style:none;display:grid;gap:9px”>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Sinais de traição</li>
-          <li style=”display:flex;gap:10px;font-size:.95rem;color:#2b2326;line-height:1.4”><span style=”color:#c9a24b;font-weight:700;flex-shrink:0”>•</span>Sinais de um homem viciado em pornografia</li>
-        </ul>
+        <div class=”mod-body”>
+          <span>Sinais de traição</span>
+          <span>Sinais de um homem viciado em pornografia</span>
+        </div>
       </div>
 
     </div>
