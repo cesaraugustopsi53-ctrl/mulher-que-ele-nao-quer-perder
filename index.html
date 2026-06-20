@@ -140,19 +140,19 @@
   .learn-card .txt{font-size:1rem;font-weight:500}
 
   /* ---------- MÓDULOS ---------- */
-  .mod{max-width:780px;margin:0 auto;display:grid;gap:20px}
-  .mod-card{background:var(--cream-card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-  .mod-head{background:var(--wine);color:#fff;padding:18px 24px}
-  .mod-head .tag{font-size:.76rem;letter-spacing:1.5px;text-transform:uppercase;opacity:.8}
-  .mod-head h3{font-size:1.55rem;color:#fff;margin-top:2px}
-  .mod-head .who{font-size:.9rem;opacity:.85;margin-top:4px}
-  .mod-body{padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:8px 22px}
-  .mod-body span{font-size:.98rem;padding-left:18px;position:relative;color:var(--ink)}
-  .mod-body span::before{content:"•";color:var(--gold);position:absolute;left:2px;font-weight:700}
-  .bonus-card{border:2px dashed var(--gold);background:#fdf8ef}
-  .bonus-card .mod-head{background:transparent;color:var(--ink);padding-bottom:6px}
-  .bonus-card .mod-head h3{color:var(--wine)}
-  .bonus-card .mod-head .tag{color:var(--gold)}
+  .mi{background:#ffffff;border:1px solid #ddd;border-radius:14px;overflow:hidden;margin-bottom:16px;max-width:780px;margin-left:auto;margin-right:auto}
+  .mi-h{background:#7c2d3a;padding:18px 24px}
+  .mi-h em{display:block;font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);font-style:normal;margin-bottom:4px}
+  .mi-h b{display:block;font-size:1.45rem;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:#ffffff;line-height:1.2}
+  .mi-h s{display:block;font-size:.85rem;color:rgba(255,255,255,.75);text-decoration:none;margin-top:3px}
+  .mi-b{padding:16px 24px;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}
+  .mi-b p{font-size:.95rem;color:#2b2326;margin:0}
+  .mi-bns{background:#fdf8ef;border:2px dashed #c9a24b;border-radius:14px;overflow:hidden;max-width:780px;margin-left:auto;margin-right:auto}
+  .mi-bns .mi-h{background:transparent}
+  .mi-bns .mi-h em{color:#c9a24b}
+  .mi-bns .mi-h b{color:#7c2d3a}
+  .mi-bns .mi-h s{color:#544a4f}
+  @media(max-width:760px){.mi-b{grid-template-columns:1fr}}
 
   /* ---------- AUTORIDADE ---------- */
   .authority-duo{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:880px;margin:0 auto 36px}
@@ -372,77 +372,58 @@
   <div class=”wrap”>
     <h2 class=”section-title”>A estrutura do curso</h2>
     <p class=”section-intro”>Quatro módulos e bônus exclusivos, construídos a partir das dores reais de milhares de mulheres.</p>
-    <div class=”mod”>
+    <div>
 
-      <div class=”mod-card”>
-        <div class=”mod-head”>
-          <div class=”tag”>Módulo 01</div>
-          <h3>A mente dele</h3>
-          <div class=”who”>com César</div>
-        </div>
-        <div class=”mod-body”>
-          <span>Como pensa o homem que trai</span>
-          <span>Arrependimento real x encenação</span>
-          <span>O que é o vício em pornografia</span>
-          <span>Por que ele te deseja menos</span>
-          <span>Por que ele inverte a culpa</span>
-          <span>Mudança que dura x recaída</span>
+      <div class=”mi”>
+        <div class=”mi-h”><em>Módulo 01</em><b>A mente dele</b><s>com César</s></div>
+        <div class=”mi-b”>
+          <p>• Como pensa o homem que trai</p>
+          <p>• Arrependimento real x encenação</p>
+          <p>• O que é o vício em pornografia</p>
+          <p>• Por que ele te deseja menos</p>
+          <p>• Por que ele inverte a culpa</p>
+          <p>• Mudança que dura x recaída</p>
         </div>
       </div>
 
-      <div class=”mod-card”>
-        <div class=”mod-head”>
-          <div class=”tag”>Módulo 02</div>
-          <h3>O seu brilho de volta</h3>
-          <div class=”who”>com Thais Ayumi</div>
-        </div>
-        <div class=”mod-body”>
-          <span>Por que você aceita menos do que merece</span>
-          <span>Quando você deixa de ser prioridade</span>
-          <span>Como recuperar o seu brilho</span>
+      <div class=”mi”>
+        <div class=”mi-h”><em>Módulo 02</em><b>O seu brilho de volta</b><s>com Thais Ayumi</s></div>
+        <div class=”mi-b”>
+          <p>• Por que você aceita menos do que merece</p>
+          <p>• Quando você deixa de ser prioridade</p>
+          <p>• Como recuperar o seu brilho</p>
         </div>
       </div>
 
-      <div class=”mod-card”>
-        <div class=”mod-head”>
-          <div class=”tag”>Módulo 03</div>
-          <h3>Parar de correr atrás</h3>
-          <div class=”who”>com César e Thais</div>
-        </div>
-        <div class=”mod-body”>
-          <span>A raiz da dependência emocional</span>
-          <span>Existir sem depender da validação dele</span>
-          <span>O que muda quando você se posiciona</span>
-          <span>Virar prioridade, não opção</span>
-          <span>Impor limite sem implorar nem ameaçar</span>
-          <span>Fazer ele correr atrás de você</span>
+      <div class=”mi”>
+        <div class=”mi-h”><em>Módulo 03</em><b>Parar de correr atrás</b><s>com César e Thais</s></div>
+        <div class=”mi-b”>
+          <p>• A raiz da dependência emocional</p>
+          <p>• Existir sem depender da validação dele</p>
+          <p>• O que muda quando você se posiciona</p>
+          <p>• Virar prioridade, não opção</p>
+          <p>• Impor limite sem implorar nem ameaçar</p>
+          <p>• Fazer ele correr atrás de você</p>
         </div>
       </div>
 
-      <div class=”mod-card”>
-        <div class=”mod-head”>
-          <div class=”tag”>Módulo 04</div>
-          <h3>Ficar ou ir, com clareza</h3>
-          <div class=”who”>com César</div>
-        </div>
-        <div class=”mod-body”>
-          <span>Critérios reais para decidir</span>
-          <span>Voltar a confiar sem ser ingênua</span>
-          <span>Reconstruir a intimidade após o perdão</span>
-          <span>A dor que insiste em voltar</span>
-          <span>Se for para ir: sair inteira</span>
-          <span>Recomeçar sem se destruir</span>
+      <div class=”mi”>
+        <div class=”mi-h”><em>Módulo 04</em><b>Ficar ou ir, com clareza</b><s>com César</s></div>
+        <div class=”mi-b”>
+          <p>• Critérios reais para decidir</p>
+          <p>• Voltar a confiar sem ser ingênua</p>
+          <p>• Reconstruir a intimidade após o perdão</p>
+          <p>• A dor que insiste em voltar</p>
+          <p>• Se for para ir: sair inteira</p>
+          <p>• Recomeçar sem se destruir</p>
         </div>
       </div>
 
-      <div class=”mod-card bonus-card”>
-        <div class=”mod-head”>
-          <div class=”tag”>🎁 Bônus exclusivos</div>
-          <h3>Inclusos no curso</h3>
-        </div>
-        <div class=”mod-body”>
-          <span>Sinais de traição</span>
-          <span>Sinais de um homem viciado em pornografia</span>
+      <div class=”mi-bns”>
+        <div class=”mi-h”><em>🎁 Bônus exclusivos</em><b>Inclusos no curso</b></div>
+        <div class=”mi-b”>
+          <p>• Sinais de traição</p>
+          <p>• Sinais de um homem viciado em pornografia</p>
         </div>
       </div>
 
